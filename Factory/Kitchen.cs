@@ -27,5 +27,14 @@ namespace CookieJar.Factory
         /// <param name="aType">Cookie type.</param>
         /// <param name="aAmount">Amount of cookies we want.i</param>
         public static IList<Cookie> BakeCookiesInOven(CookieType aType, int aAmount) => Oven.Bake(aType, aAmount);
+
+        /// <summary>
+        /// Throws whatever the user decides into the kitchen's sink. 
+        /// </summary>
+        /// <param name="aSomething">Actually, anything. Anything that the user wants to get rid of.</param>
+        public static void ThrowIntoSink(object aSomething)
+        {
+            // this method does not do anything at the moment but was added on request by Joy Clark ;-)
+        }
     }
 }
