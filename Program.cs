@@ -22,7 +22,7 @@ namespace CookieJar
             var curiousCat = Task.Run(async () =>
             {
                 int count = 0;
-                while (count < 10)
+                while (count++ < 10)
                 {
                     // the cat sleeps for two seconds (max), before it tries to steal a cookie.
                     await Task.Delay(new Random().Next(2000));
