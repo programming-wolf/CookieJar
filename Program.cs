@@ -21,19 +21,23 @@ namespace CookieJar
 
             var curiousCat = Task.Run(async () =>
             {
-                // the cat sleeps for two seconds, before it tries to steal a cookie.
-                await Task.Delay(2000);
-
-                var jar = Kitchen.GrabCookieJar();
-                var cookie = jar.TakeCookies(1);
-
-                if (cookie.Count == 1)
+                int count = 0;
+                while (count < 10)
                 {
-                    Console.WriteLine("Cat: I am happy! :) om nom");
-                }
-                else
-                {
-                    Console.WriteLine("Cat: I am so sad, no cookie!");
+                    // the cat sleeps for two seconds (max), before it tries to steal a cookie.
+                    await Task.Delay(new Random().Next(2000));
+
+                    var jar = Kitchen.GrabCookieJar();
+                    var cookie = jar.TakeCookies(1);
+
+                    if (cookie.Count == 1)
+                    {
+                        Console.WriteLine("Cat: I am happy! :) om nom");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Cat: I am so sad, no cookie!");
+                    }
                 }
             });
 
