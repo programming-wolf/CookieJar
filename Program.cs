@@ -39,7 +39,7 @@ namespace CookieJar
 
             var theCookieMonster = Task.Run(async () =>
             {
-                // we do not know exactly what the monster does.
+                // we do not know exactly what the monster does, and when it will do it.
                 await Task.Delay(new Random().Next(5000));
 
 				// but when it awakes, it is hungry. 
