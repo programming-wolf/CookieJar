@@ -48,12 +48,9 @@ namespace CookieJar
                 if (cookies.Count == 0) {
                     Console.WriteLine("Monster: RAWWRRRRR!");
                 }
-                else 
+                else
                 {
-                    foreach (var cookie in cookies)
-                    {
-                        Console.WriteLine("Monster: Omnomnom.");
-                    }
+                    Console.WriteLine("Monster: Omnomnom.");
                 }
             });
 
