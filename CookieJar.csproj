@@ -39,6 +39,7 @@
     <Compile Include="Enum\CookieType.cs" />
     <Compile Include="Factory\Oven.cs" />
     <Compile Include="Factory\Kitchen.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Objects\" />
