@@ -64,6 +64,7 @@ namespace CookieJar
 
                 var cookies = Kitchen.BakeCookiesInOven(Enum.CookieType.TripleChocolate, 10);
                 Kitchen.GrabCookieJar().StoreCookies(cookies);
+                Console.WriteLine("Grandma: I was so kind and refilled the cookies.");
             });
 
             Task.WhenAll(new[] { curiousCat, theCookieMonster, goodOlGrandMa }).GetAwaiter().GetResult();
