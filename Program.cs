@@ -12,8 +12,8 @@ namespace CookieJar
         /// <summary>
         /// Let's go, bake some cookies!
         /// </summary>
-        public static async void Main(string[] args)
         /// <param name="args">Who needs arguments.</param>
+        public static void Main(string[] args)
         {
             // someone baked some cookies already. Very kind.
             Kitchen.GrabCookieJar().StoreCookies(Kitchen.BakeCookiesInOven(Enum.CookieType.DoubleChocolate, 7));
@@ -66,7 +66,7 @@ namespace CookieJar
                 Kitchen.GrabCookieJar().StoreCookies(cookies);
             });
 
-            await Task.WhenAll(new[] {curiousCat, theCookieMonster, goodOlGrandMa});
+            Task.WhenAll(new[] { curiousCat, theCookieMonster, goodOlGrandMa }).GetAwaiter().GetResult();
         }
     }
 }
