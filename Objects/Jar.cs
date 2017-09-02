@@ -21,7 +21,7 @@ namespace CookieJar.Objects
         /// <summary>
         /// Our cookies in the jar (some would hope for whisky). They are "stack"ed. 
         /// </summary>
-        private Stack<Cookie> _cookies = new Stack<Cookie>();
+        private readonly Stack<Cookie> _cookies = new Stack<Cookie>();
 
 
         /// <summary>
