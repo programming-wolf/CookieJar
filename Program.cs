@@ -42,8 +42,8 @@ namespace CookieJar
                 // we do not know exactly what the monster does, and when it will do it.
                 await Task.Delay(new Random().Next(5000));
 
-				// but when it awakes, it is hungry. 
-				var cookies = Kitchen.GrabCookieJar().TakeCookies(6);
+                // but when it awakes, it is hungry. 
+                var cookies = Kitchen.GrabCookieJar().TakeCookies(new Random().Next(1, 8));
 
                 if (cookies.Count == 0)
                 {
