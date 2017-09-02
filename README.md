@@ -1,4 +1,4 @@
-#Grandma vs. CookieMonster
+# Grandma vs. CookieMonster
 
 This project originally began as a three-liner in a presentation.
 
