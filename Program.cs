@@ -45,7 +45,8 @@ namespace CookieJar
 				// but when it awakes, it is hungry. 
 				var cookies = Kitchen.GrabCookieJar().TakeCookies(6);
 
-                if (cookies.Count == 0) {
+                if (cookies.Count == 0)
+                {
                     Console.WriteLine("Monster: RAWWRRRRR!");
                 }
                 else
